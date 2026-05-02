@@ -1,64 +1,100 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zeeshan | Web Developer</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
 
-    <!-- Navbar -->
-    <header>
-        <h1>Zeeshan</h1>
-        <nav>
-            <a href="#">Home</a>
-            <a href="#about">About</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </header>
+/* Navbar */
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background: #111;
+    color: white;
+}
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <h2>Hello, I'm Zeeshan 👋</h2>
-        <p>Web Developer | CSE Student</p>
-        <button>Hire Me</button>
-    </section>
+nav a {
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+}
 
-    <!-- About -->
-    <section id="about" class="about">
-        <h2>About Me</h2>
-        <p>
-            I am a passionate web developer who loves building modern websites.
-            Currently pursuing B.Tech in CSE (IoT).
-        </p>
-    </section>
+/* Hero */
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+    color: white;
+}
 
-    <!-- Projects -->
-    <section id="projects" class="projects">
-        <h2>My Projects</h2>
+.hero button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    background: white;
+    color: black;
+    cursor: pointer;
+    border-radius: 5px;
+}
 
-        <div class="project-container">
-            <div class="card">Project 1</div>
-            <div class="card">Project 2</div>
-            <div class="card">Project 3</div>
-        </div>
-    </section>
+/* About */
+.about {
+    padding: 50px;
+    text-align: center;
+}
 
-    <!-- Contact -->
-    <section id="contact" class="contact">
-        <h2>Contact Me</h2>
-        <input type="text" placeholder="Your Name">
-        <input type="email" placeholder="Your Email">
-        <textarea placeholder="Your Message"></textarea>
-        <button>Send</button>
-    </section>
+/* Projects */
+.projects {
+    padding: 50px;
+    text-align: center;
+}
 
-    <!-- Footer -->
-    <footer>
-        <p>© 2026 Zeeshan Portfolio</p>
-    </footer>
+.project-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
 
-</body>
-</html>
+.card {
+    background: #eee;
+    padding: 30px;
+    width: 200px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    background: #ddd;
+    transform: scale(1.05);
+}
+
+/* Contact */
+.contact {
+    padding: 50px;
+    text-align: center;
+}
+
+.contact input,
+.contact textarea {
+    width: 80%;
+    margin: 10px;
+    padding: 10px;
+}
+
+.contact button {
+    padding: 10px 20px;
+    background: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #111;
+    color: white;
+}
